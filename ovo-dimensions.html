@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OvO Dimensions - Freeflow Arcade</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background: #000000;
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .game-page {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 1rem;
+        }
+
+        .game-container {
+            width: 100%;
+            max-width: 900px;
+            aspect-ratio: 16/9;
+            margin: 20px auto;
+        }
+
+        .game-frame {
+            width: 100%;
+            height: 100%;
+            border: 2px solid #ff3333;
+            border-radius: 10px;
+            background: #000;
+        }
+
+        h1 {
+            color: #ff3333;
+            text-shadow: 0 0 10px rgba(255, 51, 51, 0.5);
+            margin-bottom: 1rem;
+        }
+
+        .game-controls {
+            margin-top: 1rem;
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">Freeflow Arcade</div>
+    </nav>
+
+    <div class="game-page">
+        <h1>OvO Dimensions</h1>
+        <div class="game-container">
+            <embed src="https://d3rtzzzsiu7gdr.cloudfront.net/files/ovo3/game/index.html" class="game-frame">
+        </div>
+        <div class="game-controls">
+            <button onclick="toggleFullscreen()" class="control-button">Toggle Fullscreen</button>
+            <a href="index.html" class="control-button">Back to Games</a>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
